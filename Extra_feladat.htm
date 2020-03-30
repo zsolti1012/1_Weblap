@@ -1,0 +1,174 @@
+﻿<!DOCTYPE html>
+<html lang="hu">
+<style>
+.gomb
+{
+  
+  color: black;
+  height: 40px;
+  width: 160px;
+  font-size: 28px;
+  text-align: center;
+  font-family:inherit;
+  text-align: center;
+}
+
+.bekezdes{
+  font-size: var(--size);
+  font-family: var(--family);
+  font-weight: var(--weight);
+  font-style: var(--style);
+  color:var(--color);
+  background-color:GhostWhite;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 50px;
+  border: 2px solid;
+  text-align: center;
+}
+.stilus
+{
+  text-align: center;
+}
+:root {
+  --size: 18px;
+  --family: arial;
+  --color: black;
+  --style: normal;
+  }
+.vissza h1
+{
+  margin-left: 585px;
+  font-size: 20px;
+  color: white;
+  font-style: oblique;
+}
+.szmeret div
+{
+  margin-left: 0px;
+  margin-top: 5px;
+}
+.tipus div
+{
+  margin-left: 0px;
+  margin-top: 5px;
+}
+.szmeret
+{
+  text-align: center;
+  font-style:
+}
+.tipus
+{
+  text-align: center;
+}
+.szin
+{
+  text-align: center;
+}
+.elso
+{
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: -25px;
+}
+option
+{
+  background-color: white;
+  font-weight: bold;
+}
+.style1 {
+	color: #FFFFFF;
+}
+</style>
+<head>
+  <meta charset="UTF-8">
+  <title>Extra feladat</title>
+</head>
+<body style="background-image:url('Extra/greenhaze1680.jpg');background-repeat:no-repeat; background-size:cover" >
+  <div class="elso">
+    <p class="style1">Az alábbi példabekezdés a megfelelő gombokkal módosítható.</p>
+  </div>
+  <main>
+  <table style="width: 100%">
+  <tr>
+  <td colspan="2">
+    <p class="bekezdes">Ez egy minta bekezdés, melyen megmutatkozik az általunk választott betűméret, betűstílus,
+    szövegstílus, vagy a választott betűszín.</p>
+   </td>
+   </tr>
+  <tr>
+  <td colspan="2" style="height: 40px">
+    &nbsp;</td>
+   </tr>
+   <tr>
+   <td class="stilus" style="width: 50%">
+  
+     <h1 class="stilus">Betűszín kiválasztása:</h1>
+    
+      <div class="stilus">
+    
+      <input id="betuszin" type="color" onchange="szinezes()" value="black">
+     	</div>
+    
+  
+  </td>
+  <td style="width: 50%">
+  
+    
+  <h1 class="stilus">Betűméret</h1>
+    
+      <div class="stilus">
+    
+      <input class="button" type="button" name="Növelés" value="+" onclick="meretezes(1)">
+      <input class="button" type="button" name="Csökkentés" value="-" onclick="meretezes(-1)">
+    
+  
+  </div>
+    
+  
+  </td>
+  </tr>
+   <tr>
+   <td>
+  </td>
+  <td>
+  </td>
+  </tr>
+  <tr>
+  <td class="stilus" style="width: 50%">
+  
+    <h1>Szövegstílus kiválasztása:</h1>
+    
+      <input type="radio" name="1" onclick="tipusok(1)">Dőlt
+      <input type="radio" name="1" onclick="tipusok(2)">Félkövér
+      <input type="radio" name="1" onclick="tipusok(3)">Normál
+    
+   </td>
+  <td style="width: 50%">
+     
+     	
+     	<h1 class="stilus">Betűstílus</h1>
+    
+      <div class="stilus">
+    
+      <select id="kivalaszt" name="stílus-választása" onchange="stilus()">
+        <option value="Monotype Corsiva">Monotype Corsiva</option>
+        <option value="Arial">Arial</option>
+        <option value="Times New Roman">Times New Roman</option>
+      </select>
+    
+  
+  </div>
+     </td>
+  </tr>
+  <script src="./Extra/szoveg.js"></script>
+  
+  </table>
+    </main>
+ <table style="width: 100%; height: 150px">
+ <tr><td class="stilus"><a href="Kezdolap.htm"><img alt="home" src="home.png" width="80" border="2"></a></td></tr>
+ </table>   
+ </body>
+</html>
